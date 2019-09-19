@@ -1,5 +1,7 @@
 package ru.bia.model;
 
+import org.kie.api.definition.type.Label;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,9 +13,9 @@ public class Order implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "uuid")
+	@Label(value = "uuid")
 	private String id;
-	@org.kie.api.definition.type.Label(value = "Заказанные продукты")
+	@Label(value = "Заказанные продукты")
 	private List<ru.bia.model.Product> products;
 
 	public Order() {

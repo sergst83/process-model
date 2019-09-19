@@ -1,5 +1,7 @@
 package ru.bia.model;
 
+import org.kie.api.definition.type.Label;
+
 import java.util.Arrays;
 
 /**
@@ -10,9 +12,9 @@ public class Product implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Id спецификации продукта")
+	@Label(value = "Id спецификации продукта")
 	private String idSpec;
-	@org.kie.api.definition.type.Label(value = "Характеристики (включая значения характеристик)")
+	@Label(value = "Характеристики (включая значения характеристик)")
 	private java.util.List<ru.bia.model.Characteristic> caracteristics;
 
 	public Product() {
