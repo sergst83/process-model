@@ -1,4 +1,4 @@
-package ru.bia.model;
+package ru.bia.process.model;
 
 import org.kie.api.definition.type.Label;
 
@@ -15,7 +15,7 @@ public class Product implements java.io.Serializable {
 	@Label(value = "Id спецификации продукта")
 	private String idSpec;
 	@Label(value = "Характеристики (включая значения характеристик)")
-	private java.util.List<ru.bia.model.Characteristic> caracteristics;
+	private java.util.List<Characteristic> caracteristics;
 
 	public Product() {
 	}
@@ -28,17 +28,17 @@ public class Product implements java.io.Serializable {
 		this.idSpec = idSpec;
 	}
 
-	public java.util.List<ru.bia.model.Characteristic> getCaracteristics() {
+	public java.util.List<Characteristic> getCaracteristics() {
 		return this.caracteristics;
 	}
 
 	public void setCaracteristics(
-			java.util.List<ru.bia.model.Characteristic> caracteristics) {
+			java.util.List<Characteristic> caracteristics) {
 		this.caracteristics = caracteristics;
 	}
 
 	public Product(String idSpec,
-                   java.util.List<ru.bia.model.Characteristic> caracteristics) {
+                   java.util.List<Characteristic> caracteristics) {
 		this.idSpec = idSpec;
 		this.caracteristics = caracteristics;
 	}

@@ -1,4 +1,4 @@
-package ru.bia.model;
+package ru.bia.process.model;
 
 import org.kie.api.definition.type.Label;
 
@@ -16,7 +16,7 @@ public class Order implements java.io.Serializable {
 	@Label(value = "uuid")
 	private String id;
 	@Label(value = "Заказанные продукты")
-	private List<ru.bia.model.Product> products;
+	private List<Product> products;
 
 	public Order() {
 	}
@@ -29,16 +29,16 @@ public class Order implements java.io.Serializable {
 		this.id = id;
 	}
 
-	public List<ru.bia.model.Product> getProducts() {
+	public List<Product> getProducts() {
 		return this.products;
 	}
 
-	public void setProducts(List<ru.bia.model.Product> products) {
+	public void setProducts(List<Product> products) {
 		this.products = products;
 	}
 
 	public Order(String id,
-                 List<ru.bia.model.Product> products) {
+                 List<Product> products) {
 		this.id = id;
 		this.products = products;
 	}

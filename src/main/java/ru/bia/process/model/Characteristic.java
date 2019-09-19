@@ -1,4 +1,4 @@
-package ru.bia.model;
+package ru.bia.process.model;
 
 import org.kie.api.definition.type.Label;
 
@@ -15,7 +15,7 @@ public class Characteristic implements java.io.Serializable {
 	@Label(value = "Адрес получателя")
 	private String addressTo;
 	@Label(value = "Груз")
-	private ru.bia.model.Cargo cargo;
+	private Cargo cargo;
 
 	public Characteristic() {
 	}
@@ -36,16 +36,16 @@ public class Characteristic implements java.io.Serializable {
 		this.addressTo = addressTo;
 	}
 
-	public ru.bia.model.Cargo getCargo() {
+	public Cargo getCargo() {
 		return this.cargo;
 	}
 
-	public void setCargo(ru.bia.model.Cargo cargo) {
+	public void setCargo(Cargo cargo) {
 		this.cargo = cargo;
 	}
 
 	public Characteristic(String addressFrom,
-                          String addressTo, ru.bia.model.Cargo cargo) {
+                          String addressTo, Cargo cargo) {
 		this.addressFrom = addressFrom;
 		this.addressTo = addressTo;
 		this.cargo = cargo;
