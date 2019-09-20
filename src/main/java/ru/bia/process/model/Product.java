@@ -46,8 +46,8 @@ public class Product implements java.io.Serializable {
     @Override
     public String toString() {
         return "Product{" +
-                "idSpec='" + idSpec + '\'' +
-                ", caracteristics=" + caracteristics != null ? Arrays.toString(caracteristics.toArray()) : "[]" +
-                '}';
+                "idSpec='" + idSpec + "'" +
+                ", caracteristics=" + (caracteristics != null ? Arrays.toString(caracteristics.toArray()) : "[]") +
+                "}";
     }
 }

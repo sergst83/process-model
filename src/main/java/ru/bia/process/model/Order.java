@@ -46,8 +46,8 @@ public class Order implements java.io.Serializable {
     @Override
     public String toString() {
         return "Order{" +
-                "id='" + id + '\'' +
-                ", products=" + products != null ? Arrays.toString(products.toArray()) : "[]" +
-                '}';
+                "id=" + id +
+				", products=" + (products != null ? Arrays.toString(products.toArray()) : Arrays.toString(new Product[]{})) +
+                "}";
     }
 }
